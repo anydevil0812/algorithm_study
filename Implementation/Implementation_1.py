@@ -1,10 +1,8 @@
 # 공간의 크기와 공간의 크기 만큼 이동할 명령을 입력 받았을 경우의 좌표 구하기
-import time
-
 size = int(input())
 move = list(input().split())
-start_time = float(time.time())
 a, b = 1, 1
+
 for i in range(size+1):
     if (move[i] == 'R') and (b < size):
         b += 1
@@ -14,6 +12,5 @@ for i in range(size+1):
         a += 1
     elif (move[i] == 'U') and (a > 1):
         a -= 1
+
 print(a, b)
-end_time = float(time.time())
-print("time :", end_time - start_time)
