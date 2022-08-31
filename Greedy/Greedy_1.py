@@ -6,4 +6,3 @@ for i in b:
     a %= i
 print(count)
 
-
