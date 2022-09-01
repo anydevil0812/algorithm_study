@@ -1,4 +1,5 @@
 # 공간의 크기와 공간의 크기 만큼 이동할 명령을 입력 받았을 경우의 좌표 구하기
+
 size = int(input())
 move = list(input().split())
 a, b = 1, 1
