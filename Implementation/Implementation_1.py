@@ -2,13 +2,15 @@
 size = int(input())
 move = list(input().split())
 a, b = 1, 1
+
 for i in range(size+1):
-    if (move[i] == 'R') & (b < size):
+    if (move[i] == 'R') and (b < size):
         b += 1
-    elif (move[i] == 'L') & (b > 1):
+    elif (move[i] == 'L') and (b > 1):
         b -= 1
-    elif (move[i] == 'D') & (a < size):
+    elif (move[i] == 'D') and (a < size):
         a += 1
-    elif (move[i] == 'U') & (a > 1):
+    elif (move[i] == 'U') and (a > 1):
         a -= 1
+
 print(a, b)
