@@ -15,7 +15,8 @@ def dfs(x, y):
         dfs(x, y+1)
         dfs(x, y-1)
         return 'finish'
-    return False
+    else:
+        return False
 
 count = 0
 for i in range(n):
